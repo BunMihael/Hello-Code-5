@@ -80,3 +80,36 @@ string Replace(string text, char oldValue, char newValue)
 }
 string newText = Replace(text, ' ', '|');
 Console.WriteLine(newText);
+
+int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+void PrintArray(int[] arr)
+{
+    int count = array.Length;
+
+    for(int  i = 0; i< count; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine()
+}
+PrintArray(arr);
+
+void SelectionSort(int[] array)
+{
+    for(int i = 0; i< array.Length; i++)
+    {
+        int minPosition = i;
+        for(int j = i +1; j = array.Length - 1; j++)
+        {
+            if(array[j]< array[minPosition] ) minPosition = j;
+        }
+
+        int temporary = array[i];
+        array[i]= array[minPosition];
+        array[minPosition] = temporary;
+
+    }
+}
+PrintArray(arr);
+SelectionSort();
